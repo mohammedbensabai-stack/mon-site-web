@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Convéria B2B · Des chantiers qualifiés pour les artisans</title>
+<meta name="description" content="Convéria B2B met en relation les artisans avec des porteurs de projets qualifiés et bien dimensionnés. Appel gratuit, partout en France.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#E4E7EE;--alt:#D9DEEA;--ink:#1A2038;--mut:#4A5470;--v:#3F3FA8;--vd:#2F2F8A;--line:#C4CBDC;--card:#fff;--ok:#2E9E6B;--hd:Manrope,Public Sans,sans-serif;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:Public Sans,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.w{max-width:1120px;margin:auto;padding:0 24px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#3F3FA8,#6C74D8);z-index:30}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font:700 21px var(--hd)}
+.logo small{font:500 13px Public Sans;color:var(--mut)}
+.bd{position:relative;width:32px;height:32px;border-radius:9px;background:#5B8DEF;color:#fff;display:grid;place-items:center;font:700 18px Public Sans}
+.bd:after{content:"";position:absolute;top:-5px;right:-5px;width:12px;height:12px;border-radius:50%;background:#A259E6;border:2px solid #1f7a8c}
+.links{display:flex;gap:26px;font-size:14px;color:var(--mut)}
+.links a:hover{color:var(--v)}
+.btn{display:inline-block;padding:14px 26px;border-radius:10px;font:600 15px Public Sans;background:linear-gradient(180deg,#4848B8,#3F3FA8);color:#fff;border:1px solid var(--v);cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:linear-gradient(180deg,#3F3FA8,#2F2F8A);transform:translateY(-1px)}
+.btn.g{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.g:hover{border-color:var(--v);background:transparent}
+.btn.s{padding:10px 18px;font-size:14px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#EEF0F6 0%,#DDE2EE 60%,#D2D9EA 100%);border-bottom:1px solid var(--line);padding:72px 0}
+.hero .w{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+h1{font:800 clamp(33px,4.6vw,52px)/1.1 var(--hd);letter-spacing:-1px;margin-bottom:20px}
+h2{font:800 clamp(26px,3.3vw,36px)/1.15 var(--hd);letter-spacing:-.6px;margin-bottom:14px;max-width:740px}
+.sub{color:var(--mut);font-size:18px;max-width:540px;margin-bottom:28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.trust{display:flex;gap:8px 22px;flex-wrap:wrap;margin-top:24px;font-size:14px;color:var(--mut)}
+.trust span:before{content:"✓ ";color:var(--ok);font-weight:700}
+.ph-w{display:flex;flex-direction:column;align-items:center}
+.ph{position:relative;width:292px;height:590px;border-radius:46px;background:#232B52;padding:10px;box-shadow:0 24px 50px rgba(26,32,56,.3)}
+.scr{position:relative;width:100%;height:100%;border-radius:36px;overflow:hidden;background:#fff;color:#1A2038}
+.isl{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:84px;height:24px;border-radius:14px;background:#000;z-index:5}
+.sb{position:absolute;top:10px;left:22px;right:22px;display:flex;justify-content:space-between;font:600 12px Public Sans;z-index:4}
+.sc{position:absolute;inset:0;opacity:0;transition:opacity .4s;padding-top:44px;overflow:hidden}
+.ph[data-s="1"] .s1,.ph[data-s="2"] .s2,.ph[data-s="3"] .s3,.ph[data-s="4"] .s4{opacity:1}
+.fd{animation:none}
+.ph[data-s="1"] .fd{animation:scr 3.6s ease forwards}
+@keyframes scr{0%,20%{transform:translateY(0)}100%{transform:translateY(-262px)}}
+.ps{height:262px;border-bottom:8px solid #E4E7EE;padding:10px 14px}
+.ps.b{height:340px}
+.pr{display:flex;align-items:center;gap:8px;font:600 13px Public Sans;margin-bottom:8px}
+.av{width:28px;height:28px;border-radius:50%;background:#C3CAE0}.av.v{background:var(--v);color:#fff;display:grid;place-items:center;font-size:11px}
+.pr small{display:block;font:400 11px Public Sans;color:#6A7490}
+.im{height:132px;border-radius:8px;background:#DDE1EC}
+.im.h{position:relative;background:linear-gradient(#CBD2E6,#E4E7EE);overflow:hidden}
+.im.h i{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:110px;height:58px;background:#fff;border-radius:4px 4px 0 0}
+.im.h i:before{content:"";position:absolute;left:-14px;top:-40px;border:69px solid transparent;border-bottom:40px solid var(--v);border-top:0}
+.im.h i:after{content:"";position:absolute;left:44px;bottom:0;width:22px;height:30px;background:#C3CAE0;border-radius:3px 3px 0 0}
+.tx{font-size:12px;margin-top:8px;line-height:1.4}
+.tx b{display:block;margin-bottom:2px}
+.ln{height:8px;border-radius:4px;background:#E4E7EE;margin-top:8px}
+.cb{margin-top:10px;display:block;width:100%;padding:11px;border-radius:8px;background:var(--v);color:#fff;font:600 13px Public Sans;text-align:center;position:relative}
+.ph[data-s="1"] .cb:after{content:"";position:absolute;right:36px;top:14px;width:30px;height:30px;border-radius:50%;background:rgba(26,32,56,.35);opacity:0;animation:tp 3.6s ease 2.8s forwards}
+@keyframes tp{0%{opacity:0;transform:scale(1.6)}40%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1.3)}}
+.fm{padding:16px 18px}
+.fm h4{font:700 19px var(--hd);margin-bottom:12px}
+.fm label{display:block;font:500 11px Public Sans;color:#6A7490;margin:12px 0 4px}
+.fi{height:38px;border:1.5px solid #CBD2E4;border-radius:8px;padding:9px 11px;font-size:13.5px;white-space:nowrap}
+.fi.on{border-color:var(--v)}
+.fb{margin-top:20px;padding:12px;border-radius:8px;background:var(--v);color:#fff;font:600 14px Public Sans;text-align:center}
+.ck{width:62px;height:62px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font-size:32px;margin:30px auto 14px;transform:scale(0);transition:transform .4s}
+.ph[data-s="3"] .ck{transform:scale(1);transition-delay:.4s}
+.s3{text-align:center;padding-left:20px;padding-right:20px}
+.s3 h4{font:700 19px var(--hd)}
+.s3 p{font-size:12.5px;color:#6A7490;margin:4px 0 16px}
+.s3 ul{list-style:none;padding:0;text-align:left;font-size:13px}
+.s3 li{padding:9px 0;border-top:1px solid #E4E7EE;opacity:0;transform:translateX(-8px);transition:all .4s}
+.s3 li:before{content:"✓ ";color:var(--ok);font-weight:700}
+.ph[data-s="3"] .s3 li{opacity:1;transform:none}
+.ph[data-s="3"] .s3 li:nth-child(1){transition-delay:1s}.ph[data-s="3"] .s3 li:nth-child(2){transition-delay:1.6s}.ph[data-s="3"] .s3 li:nth-child(3){transition-delay:2.2s}
+.s4{background:linear-gradient(170deg,#2F3A72,#1A2038);color:#fff;text-align:center;padding:70px 14px 0}
+.s4 .tm{font:600 54px Public Sans;letter-spacing:-1px}
+.s4 .tl{font-size:12px;opacity:.7;margin-bottom:22px}
+.nt{background:rgba(255,255,255,.95);color:#1A2038;border-radius:16px;padding:12px;text-align:left;font-size:12.5px;opacity:0;transform:translateY(-30px)}
+.ph[data-s="4"] .nt{animation:sd .6s ease .5s forwards}
+@keyframes sd{to{opacity:1;transform:none}}
+.nt .t{display:flex;align-items:center;gap:7px;font-size:11px;color:#6A7490;margin-bottom:6px}
+.nt .t i{width:18px;height:18px;border-radius:5px;background:#5B8DEF;color:#fff;font:700 11px Public Sans;display:grid;place-items:center;font-style:normal}
+.nt b{display:block;font-size:13.5px;margin-bottom:2px}
+.nt .rb{margin-top:10px;padding:8px;border-radius:8px;background:var(--v);color:#fff;font:600 12.5px Public Sans;text-align:center}
+.cap{margin-top:20px;text-align:center;font:600 15px Public Sans;min-height:24px}
+.dts{display:flex;gap:8px;justify-content:center;margin-top:10px}
+.dt{width:34px;height:6px;border-radius:3px;border:0;background:var(--line);cursor:pointer;padding:0}
+.dt.on{background:var(--v)}
+.fine{font-size:12px;color:var(--mut);margin-top:8px}
+section{padding:80px 0}
+section.alt{background:var(--alt);border-block:1px solid var(--line)}
+.ey{font:600 12.5px Public Sans;letter-spacing:.12em;text-transform:uppercase;color:var(--v);margin-bottom:12px}
+.lead{color:var(--mut);max-width:620px;margin-bottom:36px}
+.gr{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.cd{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.cd h3{font:700 19px var(--hd);margin-bottom:8px}
+.cd p{color:var(--mut);font-size:15px}
+.num{font:700 15px Public Sans;color:var(--v);margin-bottom:12px}
+.end{margin-top:30px;font:600 20px var(--hd);max-width:640px}
+.two{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:40px}
+.two ul{list-style:none;padding:0;margin-top:8px}
+.two li{padding:11px 0;border-top:1px solid var(--line);display:flex;gap:12px;font-size:15.5px}
+.two li:before{content:"✓";color:var(--ok);font-weight:700}
+.strip{background:linear-gradient(120deg,#232B52,#2F3A72);color:#fff;padding:54px 0;text-align:center}
+.strip h2{margin:0 auto 10px}
+.strip p{color:#C9D0EA;max-width:540px;margin:0 auto 24px}
+.strip .btn{background:#fff;color:#232B52;border-color:#fff}
+.quiz{max-width:660px;border:1px solid var(--line);border-radius:14px;padding:30px;background:var(--card)}
+.qt{font-size:13px;color:var(--mut);margin-bottom:10px}
+.tr{height:5px;border-radius:3px;background:var(--line);margin-bottom:22px;overflow:hidden}
+.fl{height:100%;width:0;background:var(--v);transition:width .35s}
+.q{font:600 20px/1.3 var(--hd);margin-bottom:18px}
+.op{display:block;width:100%;text-align:left;padding:14px 16px;margin-bottom:10px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--ink);font:inherit;font-size:15px;cursor:pointer;transition:all .2s}
+.op:hover,.op:focus-visible{border-color:var(--v);background:var(--alt);outline:0}
+.sc2{font:700 50px var(--hd)}.sc2 span{font:500 20px Public Sans;color:var(--mut)}
+.res h3{font:700 21px var(--hd)}.res p{color:var(--mut);margin:8px 0 22px}
+details{border-top:1px solid var(--line);padding:20px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font:600 18px var(--hd);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--v);font-size:22px;line-height:1}
+details[open] summary:after{content:"–"}
+details p{color:var(--mut);margin-top:10px;max-width:700px;font-size:15px}
+.fin .w{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.co{list-style:none;padding:0;font-size:15px}
+.co li{padding:14px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px}
+.co li:last-child{border-bottom:1px solid var(--line)}
+.co span{color:var(--mut)}.co a:hover{color:var(--v)}
+footer{background:#1A2038;color:#B9C0DA;padding:30px 0;font-size:13px}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:860px){.links{display:none}.hero .w,.fin .w{grid-template-columns:1fr;gap:40px}.hero{padding:48px 0}section{padding:56px 0}.co li{flex-direction:column;gap:2px}.quiz{padding:22px}}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+dialog{border:0;border-radius:16px;padding:0;max-width:520px;width:calc(100% - 28px);background:#fff;color:#1A2038;max-height:92vh;overflow:auto}
+dialog::backdrop{background:rgba(26,32,56,.6)}
+#af{padding:28px;position:relative}
+#af h3{font:700 23px var(--hd);margin-bottom:4px;padding-right:30px}
+#af p.m{font-size:14px;color:#4A5470;margin-bottom:12px}
+#af label.l{display:block;font:600 13.5px Public Sans;margin:16px 0 6px}
+#af input[type=text],#af input[type=tel],#af input[type=email]{width:100%;padding:12px 13px;border:1.5px solid #CBD2E4;border-radius:9px;font:inherit;font-size:15px;color:#1A2038;background:#fff}
+#af input:focus{outline:0;border-color:var(--v)}
+.chs{display:flex;flex-wrap:wrap;gap:8px}
+.chs label{cursor:pointer}
+.chs input{position:absolute;opacity:0}
+.chs span{display:inline-block;padding:9px 14px;border:1.5px solid #CBD2E4;border-radius:99px;font-size:14px}
+.chs input:checked+span{border-color:var(--v);background:#E6E8F8;color:var(--vd);font-weight:600}
+.chs input:focus-visible+span{outline:2px solid var(--v)}
+#mx{position:absolute;top:14px;right:16px;border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:#4A5470}
+.ac{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.er{color:#B42318;font-size:13px;margin-top:10px;min-height:16px}
+.hero:before{content:"";position:absolute;right:-120px;top:-130px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(63,63,168,.16),transparent 70%);pointer-events:none}
+.hero .w{position:relative}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero .w>div:first-child>*{animation:up .7s ease both}
+.hero .w>div:first-child>:nth-child(2){animation-delay:.12s}.hero .w>div:first-child>:nth-child(3){animation-delay:.24s}.hero .w>div:first-child>:nth-child(4){animation-delay:.36s}
+@keyframes flt{to{transform:translateY(-8px)}}
+.ph{animation:flt 7s ease-in-out infinite alternate}
+.cd{background:linear-gradient(180deg,#fff,#F6F7FB)}
+.js .gr>.rv:nth-child(2){transition-delay:.08s}.js .gr>.rv:nth-child(3){transition-delay:.16s}.js .gr>.rv:nth-child(4){transition-delay:.24s}
+.js .cd.rv.in:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(26,32,56,.12);border-color:#A9B3D0;transition-delay:0s}
+.ey:before{content:"";display:inline-block;width:0;height:2px;background:var(--v);vertical-align:middle;margin-right:0;transition:width .6s .2s,margin .6s .2s}
+.ey.in:before{width:26px;margin-right:10px}
+@media(prefers-reduced-motion:reduce){.ph,.hero .w>div:first-child>*{animation:none}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="w">
+<a href="#top" class="logo"><span class="bd">C</span>Convéria <small>B2B</small></a>
+<div class="links"><a href="#probleme">Le problème</a><a href="#methode">Méthode</a><a href="#audit">Audit gratuit</a><a href="#diagnostic">Diagnostic</a><a href="#faq">FAQ</a></div>
+<a href="https://calendly.com/mohammed-bensabai/converia-b2b-meeting" target="_blank" rel="noopener" class="btn s">Réserver un appel</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="w">
+<div>
+<h1>Recevez des demandes de chantiers sérieuses, à la bonne taille.</h1>
+<p class="sub">Nous vous mettons en relation avec des clients qui ont un vrai projet. Vous faites votre métier, nous remplissons votre carnet de commandes.</p>
+<div class="cta"><a href="https://calendly.com/mohammed-bensabai/converia-b2b-meeting" target="_blank" rel="noopener" class="btn">Réserver un appel gratuit</a><button class="btn g" data-audit>Recevoir mon audit gratuit</button></div>
+<div class="trust"><span>Partout en France</span><span>Appel de 20 minutes</span><span>Sans engagement</span></div>
+</div>
+<div class="ph-w">
+<div class="ph" id="ph" data-s="1"><div class="scr"><div class="isl"></div><div class="sb"><span>9:41</span><span>●●● 5G</span></div>
+<div class="sc s1"><div class="fd">
+<div class="ps"><div class="pr"><div class="av"></div><div>Camille<small>Lyon</small></div></div><div class="im"></div><div class="tx">Week-end en famille ☀️</div><div class="ln" style="width:70%"></div></div>
+<div class="ps b"><div class="pr"><div class="av v">VE</div><div>Votre entreprise<small>Sponsorisé</small></div></div><div class="im h"><i></i></div><div class="tx"><b>Un projet de rénovation ?</b>Parlons-en : réponse rapide, sans engagement.</div><span class="cb">Demander un devis</span></div>
+</div></div>
+<div class="sc s2 fm"><h4>Votre projet</h4><label>Type de projet</label><div class="fi" id="f1"></div><label>Budget</label><div class="fi" id="f2"></div><label>Délai</label><div class="fi" id="f3"></div><label>Téléphone</label><div class="fi" id="f4"></div><div class="fb">Envoyer ma demande</div></div>
+<div class="sc s3"><div class="ck">✓</div><h4>Demande envoyée</h4><p>Elle est vérifiée avant d’être transmise.</p><ul><li>Projet sérieux</li><li>Budget cohérent</li><li>Prêt à être rappelé</li></ul></div>
+<div class="sc s4"><div class="tm">9:41</div><div class="tl">Côté artisan</div><div class="nt"><div class="t"><i>C</i>Convéria B2B · maintenant</div><b>Nouvelle demande qualifiée</b>Rénovation complète · 45 000 € · sous 3 mois<div class="rb">Rappeler</div></div></div>
+</div></div>
+<div class="cap" id="cap"></div>
+<div class="dts"><button class="dt" data-n="1" aria-label="Étape 1"></button><button class="dt" data-n="2" aria-label="Étape 2"></button><button class="dt" data-n="3" aria-label="Étape 3"></button><button class="dt" data-n="4" aria-label="Étape 4"></button></div>
+<p class="fine">Simulation à titre d’illustration.</p>
+</div>
+</div></header>
+
+<section id="probleme"><div class="w">
+<div class="ey rv">Le problème</div>
+<h2 class="rv">Pourquoi tant d’artisans perdent du temps</h2>
+<p class="lead rv">Vous recevez des appels, mais tous ne deviennent pas des chantiers.</p>
+<div class="gr">
+<div class="cd rv"><h3>Trop de petites demandes</h3><p>Beaucoup de personnes appellent, mais peu ont un vrai projet.</p></div>
+<div class="cd rv"><h3>Des devis pour rien</h3><p>Vous vous déplacez et vous chiffrez, mais le chantier ne se fait pas.</p></div>
+<div class="cd rv"><h3>Des mois irréguliers</h3><p>Sans clients réguliers, un mois est plein et le suivant est vide.</p></div>
+</div>
+<p class="end rv">Notre but : vous envoyer moins de demandes, mais de meilleures.</p>
+</div></section>
+
+<section class="alt" id="methode"><div class="w">
+<div class="ey rv">La méthode</div>
+<h2 class="rv">Notre méthode en 4 étapes</h2>
+<p class="lead rv">Simple, claire, sans surprise.</p>
+<div class="gr">
+<div class="cd rv"><div class="num">ÉTAPE 1</div><h3>On fait connaissance</h3><p>Un appel de 20 minutes pour comprendre votre métier et vos chantiers idéaux.</p></div>
+<div class="cd rv"><div class="num">ÉTAPE 2</div><h3>On fixe un objectif</h3><p>Nous décidons ensemble de ce que nous allons vous apporter.</p></div>
+<div class="cd rv"><div class="num">ÉTAPE 3</div><h3>On cherche vos clients</h3><p>Nous lançons les campagnes et ne gardons que les demandes sérieuses.</p></div>
+<div class="cd rv"><div class="num">ÉTAPE 4</div><h3>On fait le point</h3><p>Nous regardons les résultats avec vous et nous ajustons.</p></div>
+</div>
+<div class="two">
+<div class="cd rv"><h3>Nous nous occupons de</h3><ul><li>Chercher les clients</li><li>Trier les demandes</li><li>Suivre les résultats</li></ul></div>
+<div class="cd rv"><h3>Vous gardez</h3><ul><li>Vos chantiers</li><li>Vos devis et vos prix</li><li>Votre relation avec vos clients</li></ul></div>
+</div>
+</div></section>
+
+<div class="strip"><div class="w">
+<h2 class="rv">Premier mois : on prouve d’abord.</h2>
+<p class="rv">Le premier mois, nous travaillons uniquement aux résultats. Nous fixons un objectif ensemble, pour vous montrer que la méthode fonctionne.</p>
+<a href="https://calendly.com/mohammed-bensabai/converia-b2b-meeting" target="_blank" rel="noopener" class="btn rv">Réserver un appel gratuit</a>
+</div></div>
+
+<section id="audit"><div class="w">
+<div class="ey rv">Audit gratuit</div>
+<h2 class="rv">Recevez votre audit gratuit</h2>
+<p class="lead rv">Répondez à quelques questions sur votre activité. Nous l’étudions et nous vous envoyons nos conseils pour recevoir de meilleurs chantiers.</p>
+<div class="gr" style="margin-bottom:30px">
+<div class="cd rv"><div class="num">1</div><h3>Vous répondez</h3><p>Quelques questions, 2 minutes.</p></div>
+<div class="cd rv"><div class="num">2</div><h3>Nous étudions</h3><p>Nous regardons votre activité et votre zone.</p></div>
+<div class="cd rv"><div class="num">3</div><h3>Vous recevez</h3><p>Nos conseils, par email ou par téléphone.</p></div>
+</div>
+<div class="cta rv"><button class="btn" data-audit>Recevoir mon audit gratuit</button><a href="https://calendly.com/mohammed-bensabai/converia-b2b-meeting" target="_blank" rel="noopener" class="btn g">Ou réserver un appel</a></div>
+</div></section>
+
+<section class="alt" id="diagnostic"><div class="w">
+<div class="ey rv">Diagnostic</div>
+<h2 class="rv">Faites le point en 1 minute</h2>
+<p class="lead rv">5 questions pour voir où en est votre carnet de commandes.</p>
+<div class="quiz rv" id="quiz" aria-live="polite"></div>
+</div></section>
+
+<section id="faq"><div class="w">
+<div class="ey rv">Questions fréquentes</div>
+<h2 class="rv">Vos questions</h2>
+<div style="margin-top:30px" class="rv">
+<details><summary>Comment se passe l’appel ?</summary><p>Nous parlons 20 minutes en visio de votre métier et des chantiers que vous recherchez. Vous repartez avec une idée claire, sans engagement.</p></details>
+<details><summary>C’est quoi une demande sérieuse ?</summary><p>Une personne qui a un vrai projet, avec un budget adapté à votre activité, et qui veut être rappelée.</p></details>
+<details><summary>Dois-je tout gérer moi-même ?</summary><p>Non. Nous cherchons les clients, nous trions les demandes et nous suivons les résultats. Vous rappelez les clients et vous faites vos chantiers.</p></details>
+<details><summary>Que dois-je vous donner ?</summary><p>Quelques informations sur votre activité et vos réalisations, pour bien présenter votre travail.</p></details>
+<details><summary>Travaillez-vous partout en France ?</summary><p>Oui. Tout se fait à distance, en visio.</p></details>
+</div></div></section>
+
+<section class="alt fin" id="contact"><div class="w">
+<div>
+<div class="ey rv">Contact</div>
+<h2 class="rv">Parlons de votre prochain chantier.</h2>
+<p class="lead rv">Réservez un appel gratuit de 20 minutes, ou recevez d’abord votre audit. Sans engagement.</p>
+<div class="cta rv"><a href="https://calendly.com/mohammed-bensabai/converia-b2b-meeting" target="_blank" rel="noopener" class="btn">Réserver un appel gratuit</a><button class="btn g" data-audit>Recevoir mon audit gratuit</button></div>
+</div>
+<ul class="co rv">
+<li><span>Téléphone</span><a href="tel:+33602857353">06 02 85 73 53</a></li>
+<li><span>Email</span><a href="mailto:converiab2b@gmail.com">converiab2b@gmail.com</a></li>
+<li><span>Instagram</span><a href="https://www.instagram.com/converia.b2b/" target="_blank" rel="noopener">@converia.b2b</a></li>
+<li><span>LinkedIn</span><a href="https://www.linkedin.com/in/conv%C3%A9ria-b2b-63086b447/" target="_blank" rel="noopener">Convéria B2B</a></li>
+</ul>
+</div></section>
+
+<footer><div class="w">
+<span>© 2026 Convéria B2B · Mohammed Zakaria Bensabai, entrepreneur individuel</span>
+<!-- TODO: ajouter SIRET, adresse, liens Mentions légales et Confidentialité -->
+<span>Partout en France</span>
+</div></footer>
+
+<dialog id="md"><form id="af" novalidate>
+<button type="button" id="mx" aria-label="Fermer">×</button>
+<div id="st1"><h3>Recevez votre audit gratuit</h3><p class="m">Quelques questions sur votre activité. Étape 1 sur 2.</p>
+<label class="l" for="a1">Votre activité</label><input type="text" id="a1" placeholder="Ex : plaquiste, menuisier…">
+<label class="l" for="a2">Votre zone d’intervention</label><input type="text" id="a2" placeholder="Ex : Lyon et alentours">
+<div class="l" style="font:600 13.5px Public Sans;margin:16px 0 6px">Comment trouvez-vous vos clients aujourd’hui ?</div>
+<div class="chs"><label><input type="radio" name="c" value="Bouche-à-oreille" checked><span>Bouche-à-oreille</span></label><label><input type="radio" name="c" value="Réseaux sociaux"><span>Réseaux sociaux</span></label><label><input type="radio" name="c" value="Google"><span>Google</span></label><label><input type="radio" name="c" value="Autre"><span>Autre</span></label></div>
+<div class="l" style="font:600 13.5px Public Sans;margin:16px 0 6px">Votre objectif principal</div>
+<div class="chs"><label><input type="radio" name="o" value="Plus de demandes" checked><span>Plus de demandes</span></label><label><input type="radio" name="o" value="Des demandes plus sérieuses"><span>Des demandes plus sérieuses</span></label><label><input type="radio" name="o" value="Des mois plus réguliers"><span>Des mois plus réguliers</span></label></div>
+<div class="er" id="e1"></div><div class="ac"><button type="button" class="btn" id="nx">Suivant</button></div></div>
+<div id="st2" hidden><h3>Vos coordonnées</h3><p class="m">Pour vous envoyer votre audit. Étape 2 sur 2.</p>
+<label class="l" for="b1">Nom</label><input type="text" id="b1" autocomplete="name">
+<label class="l" for="b2">Téléphone</label><input type="tel" id="b2" autocomplete="tel">
+<label class="l" for="b3">Email</label><input type="email" id="b3" autocomplete="email">
+<label class="l" for="b4">Site ou Instagram (facultatif)</label><input type="text" id="b4">
+<div class="er" id="e2"></div><div class="ac"><button type="button" class="btn g" id="bk">Retour</button><button type="submit" class="btn">Envoyer ma demande</button></div></div>
+<div id="st3" hidden><h3>Merci !</h3><p class="m" style="margin-top:10px;font-size:15px">Votre messagerie va s’ouvrir avec votre demande déjà remplie : il ne reste qu’à l’envoyer. Si rien ne s’ouvre, écrivez-nous à converiab2b@gmail.com.</p><div class="ac"><button type="button" class="btn" id="cl">Fermer</button></div></div>
+</form></dialog>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+var bar=document.getElementById('bar');
+function sc(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.width=(h>0?scrollY/h*100:0)+'%'}
+addEventListener('scroll',sc,{passive:true});sc();
+var els=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add('in')})}
+/* simulation téléphone */
+var ph=document.getElementById('ph'),cap=document.getElementById('cap'),dts=document.querySelectorAll('.dt');
+var LB=['Un client voit votre publication','Il remplit un court formulaire','Sa demande est vérifiée','Vous recevez la demande'];
+var DU=[4400,5400,4600,4400],V=['Rénovation complète','45 000 €','Dans les 3 mois','06 •• •• •• ••'];
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,tm=[];
+function clr(){tm.forEach(clearTimeout);tm=[]}
+function typ(k,t){var el=document.getElementById('f'+(k+1)),i=0;el.className='fi on';
+(function n(){el.textContent=t.slice(0,++i);if(i<t.length)tm.push(setTimeout(n,55));else el.className='fi'})()}
+function go(n){clr();ph.setAttribute('data-s',n);cap.textContent=n+' · '+LB[n-1];
+dts.forEach(function(d,k){d.className='dt'+(k==n-1?' on':'')});
+if(n==2){for(var k=0;k<4;k++){document.getElementById('f'+(k+1)).textContent=''}
+if(reduce){V.forEach(function(t,k){document.getElementById('f'+(k+1)).textContent=t})}
+else V.forEach(function(t,k){tm.push(setTimeout(function(){typ(k,t)},500+k*1150))})}
+if(!reduce)tm.push(setTimeout(function(){go(n%4+1)},DU[n-1]))}
+dts.forEach(function(d){d.onclick=function(){go(+d.getAttribute('data-n'))}});
+go(1);
+/* diagnostic */
+var CAL='https://calendly.com/mohammed-bensabai/converia-b2b-meeting';
+var Q=[
+['Quelle part de votre carnet de commandes vient du bouche-à-oreille ?',['Presque tout','Environ la moitié','Une petite part']],
+['Vos mois se ressemblent-ils en termes de chantiers ?',['Non, ils varient beaucoup','Un peu','Oui, c’est régulier']],
+['Parmi les demandes reçues, combien sont de petits dossiers qui n’aboutissent pas ?',['Beaucoup','Quelques-unes','Très peu']],
+['Pouvez-vous prendre plus de chantiers dans les prochains mois ?',['Oui, sans problème','Un peu','Non, je suis complet']],
+['Répondez-vous rapidement aux nouvelles demandes (moins de 24 h) ?',['Oui, toujours','Parfois','Difficilement']]
+];
+var box=document.getElementById('quiz'),i=0,s=0;
+function show(){
+if(i>=Q.length){return res()}
+box.innerHTML='<div class="qt">Question '+(i+1)+' sur '+Q.length+'</div><div class="tr"><div class="fl" style="width:'+(i/Q.length*100)+'%"></div></div><div class="q"></div><div id="o"></div>';
+box.querySelector('.q').textContent=Q[i][0];
+var o=box.querySelector('#o');
+Q[i][1].forEach(function(t,k){var b=document.createElement('button');b.className='op';b.textContent=t;b.onclick=function(){s+=2-k;i++;show()};o.appendChild(b)});
+}
+function res(){
+var m=s>=7?['Le bon moment pour structurer','Votre activité gagnerait à recevoir un flux régulier de projets qualifiés. C’est exactement ce que nous construisons avec vous.']:s>=4?['Une bonne base à consolider','Quelques ajustements et un flux plus régulier de projets bien dimensionnés vous feraient franchir un cap.']:['Un carnet déjà solide','Parlons-en pour voir si notre approche a du sens pour vous, sans engagement.'];
+box.innerHTML='<div class="res"><div class="ey">Votre résultat</div><div class="sc2">'+s+'<span> / 10</span></div><div class="tr"><div class="fl" style="width:'+s*10+'%"></div></div><h3>'+m[0]+'</h3><p>'+m[1]+'</p><a class="btn" href="'+CAL+'" target="_blank" rel="noopener">Réserver un appel gratuit</a> <button class="btn g" data-audit>Recevoir mon audit gratuit</button> <button class="btn g" id="r">Refaire le diagnostic</button></div>';
+box.querySelector('#r').onclick=function(){i=0;s=0;show()};
+}
+/* audit */
+var md=document.getElementById('md'),$=function(x){return document.getElementById(x)};
+document.addEventListener('click',function(e){if(e.target.closest('[data-audit]')){$('st1').hidden=false;$('st2').hidden=true;$('st3').hidden=true;md.showModal()}});
+function cl(){md.close()}$('mx').onclick=cl;$('cl').onclick=cl;
+md.addEventListener('click',function(e){if(e.target===md)cl()});
+$('nx').onclick=function(){if(!$('a1').value.trim()||!$('a2').value.trim()){$('e1').textContent='Merci de remplir votre activité et votre zone.';return}$('e1').textContent='';$('st1').hidden=true;$('st2').hidden=false};
+$('bk').onclick=function(){$('st2').hidden=true;$('st1').hidden=false};
+$('af').onsubmit=function(e){e.preventDefault();
+var n=$('b1').value.trim(),t=$('b2').value.trim(),m=$('b3').value.trim();
+if(!n||!t||!/^\S+@\S+\.\S+$/.test(m)){$('e2').textContent='Merci de renseigner votre nom, votre téléphone et un email valide.';return}
+$('e2').textContent='';
+var r=function(k){return document.querySelector('input[name='+k+']:checked').value};
+var b='Demande d’audit gratuit\n\nActivité : '+$('a1').value+'\nZone : '+$('a2').value+'\nClients aujourd’hui : '+r('c')+'\nObjectif : '+r('o')+'\n\nNom : '+n+'\nTéléphone : '+t+'\nEmail : '+m+'\nSite / Instagram : '+($('b4').value||'—');
+$('st2').hidden=true;$('st3').hidden=false;
+location.href='mailto:converiab2b@gmail.com?subject='+encodeURIComponent('Audit gratuit - '+n)+'&body='+encodeURIComponent(b)};
+show();
+})();
+</script>
+</body>
+</html>
